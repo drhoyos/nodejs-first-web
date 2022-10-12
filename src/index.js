@@ -17,5 +17,5 @@ app.get("/test", (req, res) => {
     res.render("test",{title: 'web test'});
   });
 
-app.listen(3000);
-console.log("Servidor en PORT:", 3000);
+app.listen(process.env.PORT);
+console.log("Servidor en PORT:", process.env.PORT);
